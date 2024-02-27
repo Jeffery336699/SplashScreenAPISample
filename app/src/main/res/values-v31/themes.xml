@@ -1,30 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="Theme.SplashScreenAPISample" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <!-- Primary brand color. -->
+    <!--<style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        &lt;!&ndash; Primary brand color. &ndash;&gt;
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
-        <!-- Secondary brand color. -->
+        &lt;!&ndash; Secondary brand color. &ndash;&gt;
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+        &lt;!&ndash; Status bar color. &ndash;&gt;
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:windowBackground">@color/white</item>
+        &lt;!&ndash; Customize your theme here. &ndash;&gt;
+
+        &lt;!&ndash;        max duration is 1000ms&ndash;&gt;
+&lt;!&ndash;        <item name="android:windowSplashScreenAnimationDuration">100</item>&ndash;&gt;
+        &lt;!&ndash;splash screen branding image&ndash;&gt;
+&lt;!&ndash;        <item name="android:windowSplashScreenBrandingImage">@drawable/api12_logo</item>&ndash;&gt;
+        &lt;!&ndash;        icon background color&ndash;&gt;
+&lt;!&ndash;        <item name="android:windowSplashScreenIconBackgroundColor">@color/white</item>&ndash;&gt;
+&lt;!&ndash;        <item name="android:windowBackground">@android:color/holo_orange_light</item>&ndash;&gt;
+        <item name="android:windowNoTitle">true</item>
+    </style>-->
+
+    <style name="SplashTheme" parent="AppTheme">
+<!--        <item name="android:windowFullscreen">true</item>-->
+        <item name="android:statusBarColor">@android:color/transparent</item>
         <!--        splash screen background color-->
-        <item name="android:windowSplashScreenBackground">#004d28</item>
+        <item name="android:windowSplashScreenBackground">@color/white</item>
         <!--        provide animatedly drawable-->
         <item name="android:windowSplashScreenAnimatedIcon">
-            @drawable/splash_screen_animateable_icon
+            @drawable/white_bg
         </item>
-        <!--        max duration is 1000ms-->
-        <item name="android:windowSplashScreenAnimationDuration">800</item>
-        <!--splash screen branding image-->
-        <item name="android:windowSplashScreenBrandingImage">@drawable/api12_logo</item>
-        <!--        icon background color-->
-        <item name="android:windowSplashScreenIconBackgroundColor">#004d28</item>
-        <!--        <item name="android:windowBackground">@android:color/holo_orange_light</item>-->
     </style>
 </resources>
